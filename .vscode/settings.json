@@ -14,7 +14,8 @@
         ".\\scripts\\New-NpcName.ps1": true,
         ".\\scripts\\Publish-Wiki.ps1": true,
         ".\\scripts\\Roll-Dice.ps1": true,
-        ".\\scripts\\Test-Campaign.ps1": true
+        ".\\scripts\\Test-Campaign.ps1": true,
+        "git fetch": true
     },
     "editor.fontSize": 14,
     "markdown.preview.fontSize": 18,
