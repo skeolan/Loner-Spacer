@@ -22,6 +22,24 @@ Inspect folder-scoped workspace settings through the allow-listed read-only wrap
 
 The script emits the folder workspace root and `.vscode/settings.json` content as JSON and does not modify the file.
 
+## GitHub Wiki Publishing
+
+Publish a generated reading view of the current player sheets and complete lorebook to the repository's separate GitHub wiki:
+
+```powershell
+.\scripts\Publish-Wiki.ps1 -Push
+```
+
+The publisher first runs `Test-Campaign.ps1` and requires a clean source repository. It clones or updates `Loner-Spacer.wiki.git` in a temporary directory, replaces its generated content, converts Foam wikilinks and local links, simplifies extension-only sheet layouts for GitHub Markdown, creates `Home.md`, `_Sidebar.md`, and `_Footer.md`, validates all generated internal links, commits the result, and pushes `master` only when `-Push` is supplied.
+
+For a local preview while developing the publisher or reviewing uncommitted source changes:
+
+```powershell
+.\scripts\Publish-Wiki.ps1 -WikiPath "$env:TEMP\Loner-Spacer-wiki-preview" -SkipSourceCleanCheck
+```
+
+The main repository remains authoritative. Do not hand-edit generated wiki pages; changes will be replaced by the next publish.
+
 ## Setup
 
 Install the pinned name-generation dependencies into the workspace environment:

@@ -12,6 +12,7 @@
         "git submodule update --init --recursive": true,
         ".\\scripts\\Get-WorkspaceConfiguration.ps1": true,
         ".\\scripts\\New-NpcName.ps1": true,
+        ".\\scripts\\Publish-Wiki.ps1": true,
         ".\\scripts\\Roll-Dice.ps1": true,
         ".\\scripts\\Test-Campaign.ps1": true
     },

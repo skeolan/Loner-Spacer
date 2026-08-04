@@ -2,6 +2,8 @@
 
 This repository contains the campaign state, chronological play record, setting lorebook, and local rules references for Nova Darkreach and the *Horizon Chaser* in the Quaternary Sector of *The Shattered Reach*.
 
+The generated [GitHub wiki](https://github.com/skeolan/Loner-Spacer/wiki) provides a public reading view of the player sheets and lorebook. Canonical state remains in this repository.
+
 ## Contents
 
 - [Campaign](campaign/README.md) -- current state, chapters, lorebook, and ledgers.

@@ -167,6 +167,7 @@ try {
     foreach ($requiredScript in @(
         '.\scripts\Get-WorkspaceConfiguration.ps1',
         '.\scripts\New-NpcName.ps1',
+        '.\scripts\Publish-Wiki.ps1',
         '.\scripts\Roll-Dice.ps1',
         '.\scripts\Test-Campaign.ps1'
     )) {

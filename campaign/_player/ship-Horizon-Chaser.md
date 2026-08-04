@@ -2,15 +2,15 @@
 
 > [!MULTI-COLUMN|sheet-grid profile-grid]
 >
-> > [!INFO|wide-3 sheet-profile] SHIP PROFILE
+> > [!INFO|sheet-profile] SHIP PROFILE
 > >
 > > | **SHIP NAME** | Horizon Chaser |
 > > |:---|:---|
 > > | **TYPE** | Courier |
 >
-> > [!CHECK|sheet-track] LUCK
-> >
-> > ✅ ✅ ✅ ✅ ✅ ✅
+> > [!INFO| sheet-profile] TRACKS
+> > > [!HINT|sheet-track] LUCK
+> > > ✅ ✅ ✅ ✅ ✅ ✅
 
 > [!MULTI-COLUMN|col3 sheet-grid ship-grid]
 >
