@@ -4,13 +4,13 @@
 >
 > > [!ABSTRACT| sheet-profile] CHARACTER PROFILE
 > >
-> > | | | | |
-> > |:---|:---|:---|:---|
+> > | | |
+> > |:---|:---|
 > > | **NAME** | Nova Darkreach |
 > > | **AGE** | 27 |
-> > | **NICKNAME** | Nova |  |  |
-> > | **CONCEPT** | Risk-Taking Courier |  |  |
-> > | **WEALTH** | Barely Scraping By |  |  |
+> > | **NICKNAME** | Nova |
+> > | **CONCEPT** | Risk-Taking Courier |
+> > | **WEALTH** | Barely Scraping By |
 >
 > > [!INFO| sheet-profile] TRACKS
 > > > [!HINT|sheet-track] LUCK
