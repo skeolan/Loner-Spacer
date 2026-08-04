@@ -1,12 +1,12 @@
 # Nova Darkreach
 
+## PROFILE
 > [!MULTI-COLUMN|sheet-grid profile-grid]
 >
-> > [!ABSTRACT| sheet-profile] CHARACTER PROFILE
+> > [!ABSTRACT| sheet-profile] DOSSIER
 > >
-> > | | |
-> > |:---|:---|
 > > | **NAME** | Nova Darkreach |
+> > |:---|:---|
 > > | **AGE** | 27 |
 > > | **NICKNAME** | Nova |
 > > | **CONCEPT** | Risk-Taking Courier |
@@ -22,6 +22,7 @@
 > > > ⬜ ⬜ ⬜
 > >
 
+## TRAITS
 > [!MULTI-COLUMN|col2 sheet-grid character-grid]
 >
 > > [!TIP] SKILLS
@@ -60,7 +61,8 @@
 > > | Portable Repair Kit |
 > > | Signal Beacon |
 
-> [!NOTE] NOTES
+## NOTES
+> [!NOTE] >
 > ||
 > |:---|
 > | Cinder Ledger payment due within seventy-two hours |

@@ -114,7 +114,7 @@ function Convert-PanelBody {
     $result = [System.Collections.Generic.List[string]]::new()
     foreach ($line in $Lines) {
         $value = $line.TrimEnd()
-        if ($value -match '^\|?\s*\|\s*$' -or $value -match '^\|\s*:?-{3,}:?\s*\|\s*$') {
+        if ($value -match '^\|?\s*\|\s*$' -or $value -match '^\|(?:\s*:?-{3,}:?\s*\|)+\s*$') {
             continue
         }
         if ($value -match '^\|\s*(.*?)\s*\|\s*$') {
@@ -241,7 +241,13 @@ function Convert-SheetMarkdown {
                 $index++
             }
 
-            if ($title -match 'PROFILE$') {
+            if ($title -eq 'DOSSIER') {
+                foreach ($bodyLine in $body) {
+                    $output.Add($bodyLine)
+                }
+                $output.Add('')
+            }
+            elseif ($title -match 'PROFILE$') {
                 $output.Add("## $title")
                 $output.Add('')
                 foreach ($bodyLine in $body) {
@@ -261,7 +267,9 @@ function Convert-SheetMarkdown {
                 $alertType = Get-AlertType -Type $type
                 $panelLines = @(Convert-PanelBody -Lines $body.ToArray())
                 $output.Add("> [!$alertType]")
-                $output.Add("> **$title**")
+                if ($title -ne '>') {
+                    $output.Add("> **$title**")
+                }
                 if ($panelLines.Count -gt 0) {
                     $output.Add('>')
                     foreach ($panelLine in $panelLines) {
@@ -439,7 +447,7 @@ try {
         $pageName = Get-WikiPageName -SourceRelative $item.Relative
         if ($pageNames.Contains($pageName)) {
             throw "Duplicate generated wiki page name '$pageName'."
-        }
+       }
         $pageMap[$item.Relative] = $pageName
         $pageNames.Add($pageName)
     }
