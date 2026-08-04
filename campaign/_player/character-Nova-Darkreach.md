@@ -5,7 +5,7 @@
 >
 > > [!ABSTRACT| sheet-profile] DOSSIER
 > >
-> > | **NAME** | Nova Darkreach |
+> > | **NAME** | Mariah Darkreach |
 > > |:---|:---|
 > > | **AGE** | 27 |
 > > | **NICKNAME** | Nova |
