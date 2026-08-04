@@ -35,6 +35,6 @@
 > [!WARNING] IMMEDIATE PRESSURES
 > ||
 > |:---|
-> | Needs hyperfuel before departure |
-> | Departure clearance suspended at Wraith Base |
-> | Docking clamps engaged |
+> | Concordat hyperfuel transfer in progress |
+> | Inspection order stayed until return to Wraith Base |
+> | Recover the Argent Surveyor navigation core |

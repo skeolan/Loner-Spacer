@@ -19,7 +19,7 @@
 > > ---
 > >
 > > > [!QUESTION|sheet-track] TWIST
-> > > ⬜ ⬜ ⬜
+> > > 🔀 ⬜ ⬜
 > >
 
 ## TRAITS

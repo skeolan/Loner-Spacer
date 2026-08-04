@@ -9,6 +9,7 @@
 
 - Holds encrypted payment records aboard the *Horizon Chaser*.
 - Those records contain enough names to provoke a major conflict if exposed.
+- Operates a drop-point in [Drake's Divide](../locations/drakes-divide.md).
 
 ## Sources
 

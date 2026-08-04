@@ -7,8 +7,8 @@
 
 ## Established Facts
 
-- Three survey vessels have disappeared nearby.
-- The threat associated with the Rift destroyed the *Argent Surveyor*.
+- Three survey vessels have been lost nearby.
+- The latest, the *Argent Surveyor*, was destroyed by the threat associated with the Rift.
 - No connection to the Predecessors or Elder Dominion is established.
 
 ## Sources

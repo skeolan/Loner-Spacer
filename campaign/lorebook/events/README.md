@@ -12,19 +12,20 @@ This directory contains one small in-fiction artifact per consequential establis
 
 - `001 NEWS` [Argent Surveyor Destroyed](3500.08.03.001-NEWS-argent-surveyor-destroyed.md) -- Survey Command incident bulletin.
 - `002 COMM` [Concordat Contract Offered](3500.08.03.002-COMM-concordat-contract-offered.md) -- secure contract transmission.
-- `003 SYSL` [Departure Clearance Suspended](3500.08.03.003-SYSL-departure-clearance-suspended.md) -- bridge systems log with received transmission.
+- `003 SYSL` [Departure Clearance Suspended](3500.08.03.003-SYSL-departure-clearance-suspended.md) -- bridge systems berth-control alert.
 
 ## Archive Convention
 
 - Name files `YYYY.MM.DD.NNN-CODE-description.md`, where the date uses the campaign's Common Era archive date, `NNN` is its causal sequence for that date beginning at `001`, and `CODE` is the artifact class code from the table below.
 - Event dates use `YYYY-MM-DD HH:MM:SS CE` under the `Event-Date` header. *The Shattered Reach* establishes the present as 3500 CE but defines no sector-wide clock or finer calendar; month, day, and hour are character knowledge or player inference.
 - Preserve unknown details as unknown. Archive ordering is omniscient bookkeeping, not proof that any character knows the timestamp or full event.
-- Format YAML keys like modern plaintext message headers: Title Case with hyphens rather than snake case. Every artifact uses the same ordered header block: `Event-ID`, `Event-Date`, `Location`, `Record-Type`, and `Participants`.
+- Format YAML keys like modern plaintext message headers: Title Case with hyphens rather than snake case. Every artifact uses the same ordered header block: `Event-ID`, `Event-Date`, `Location`, `Record-Type`, `Record-Origin`, `From`, `To`, `Channel`, and `Subject`.
 - Use plain YAML scalars by default. Add quotes only when YAML syntax or preservation of significant leading/trailing whitespace requires them. Use Title Case for `Record-Type` values.
 - Put event facts and changing state in the artifact body, not frontmatter. Casualties, objectives, consequences, response state, and enforcement status are content.
 - Do not use campaign-relative phrases such as "before Chapter 1" inside the fiction or metadata.
 - Put links to campaign source files only in a final collapsed OOC callout using `> [!NOTE]- OOC`. Nothing in that callout is part of the fictional artifact.
 - Keep each artifact small. Put reusable entity facts on their lorebook pages and extended scene prose in chapter notebooks.
+- Preserve only the diegetic artifact itself rather than duplicating the full scene. Dialogue belongs in the chapter transcript unless a communication transcript is specifically the event artifact.
 
 ## Record Codes
 

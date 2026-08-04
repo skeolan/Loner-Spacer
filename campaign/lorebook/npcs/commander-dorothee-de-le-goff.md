@@ -1,14 +1,18 @@
 # Commander Dorothée de Le Goff
 
 - **Role:** Concordat representative at the Wraith Base liaison office and mission patron
-- **Relationship:** Prospective employer
-- **Current status:** Waiting for Nova's answer
+- **Relationship:** Employer
+- **Current status:** Ended the call after authorizing fuel transfer and activating Nova's recovery credentials
 
 ## Established Facts
 
-- Offered Nova a contract to destroy the threat emerging from the Charybdis Rift.
-- Requires recovery of the *Argent Surveyor*'s navigation core.
-- Offered a military-grade energy core for the *Horizon Chaser* as payment.
+- Offered Nova a contract to recover the *Argent Surveyor*'s ejected navigation core and its record of the attack.
+- Nova accepted the contract, contingent in practice on Le Goff clearing the inspection and departure blockade.
+- Claims the *Horizon Chaser*'s navigation suite can locate the core through the Rift's distortion.
+- Offered hyperfuel, departure clearance, and a military-grade energy core for the *Horizon Chaser* as payment.
+- Accepted responsibility for Nova's departure under the emergency Concordat contract.
+- Her offer preceded the Port Authority security hard lock by seventy-nine seconds, and Nova saw her smirk when the lock engaged.
+- Whether she knew of or influenced the inspection is not established.
 
 ## Sources
 

@@ -4,12 +4,12 @@
 - **Location:** Beside the Charybdis Rift
 - **Region:** Contested Zone, near the Outer Reaches
 - **Controlling authority:** Not yet established
-- **Current status:** The *Horizon Chaser* is docked and physically restrained
+- **Current status:** The *Horizon Chaser* is docked; its clamps are disengaging and departure is cleared
 
 ## Established Facts
 
-- Its docking clamps are engaged around the *Horizon Chaser*.
-- Local authorities suspended Nova's departure clearance and ordered an inspection.
+- Its docking clamps hard-locked around the *Horizon Chaser*, then disengaged after Concordat intervention.
+- Local authorities stayed their inspection order until the *Horizon Chaser* returns to Wraith Base.
 - A Concordat liaison office operates on Wraith Base, but its relationship with the station's controlling authority is not yet established.
 
 ## Sources

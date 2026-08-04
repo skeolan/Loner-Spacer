@@ -10,7 +10,17 @@ Run all read-only repository integrity checks through one allow-listed entry poi
 .\scripts\Test-Campaign.ps1
 ```
 
-The script validates event archive names, codes, headers, dates, sequences, and OOC callouts; recursive README coverage; local Markdown links; notebook JSON and cell metadata; required script syntax; stale migrated terms; pinned Python dependencies; submodule state; and Git whitespace. It emits a JSON summary and exits nonzero on failure.
+The script validates event archive names, codes, headers, dates, sequences, and OOC callouts; recursive README coverage; local Markdown links; notebook JSON and core cell structure; required script syntax; stale migrated terms; pinned Python dependencies; submodule state; and Git whitespace. It emits a JSON summary and exits nonzero on failure.
+
+## Notebook Normalization
+
+If a concrete compatibility issue requires custom cell metadata, normalize it and repository line endings through the allow-listed entry point:
+
+```powershell
+.\scripts\Normalize-Notebook.ps1
+```
+
+By default, the script processes every active notebook under `campaign/chapters`. Pass `-Path` to limit it to one or more notebooks. It fills missing `metadata.language`, copies each stable cell ID into `metadata.id`, writes UTF-8 without a byte-order mark using LF line endings, and reports whether each file changed. It does not generate IDs or alter cell content. Standard play does not invoke it while the custom metadata checks are disabled.
 
 ## Workspace Configuration
 

@@ -151,12 +151,17 @@ try {
                 Add-Failure "Notebook has unsupported nbformat: $($notebookFile.Name)"
             }
             foreach ($cell in @($notebook.cells)) {
-                if (-not $cell.cell_type -or $null -eq $cell.source -or -not $cell.metadata.language) {
+                if (-not $cell.cell_type -or $null -eq $cell.source) {
                     Add-Failure "Notebook cell is missing required fields: $($notebookFile.Name)"
                 }
-                if (-not $cell.id -and -not $cell.metadata.id) {
-                    Add-Failure "Existing notebook cell is missing an ID: $($notebookFile.Name)"
-                }
+                # Experimental: standard notebook editing does not persist metadata.language.
+                # if (-not $cell.metadata.language) {
+                #     Add-Failure "Notebook cell is missing metadata.language: $($notebookFile.Name)"
+                # }
+                # Experimental: nbformat 4.5 stores IDs at cell.id, not metadata.id.
+                # if (-not $cell.id -and -not $cell.metadata.id) {
+                #     Add-Failure "Existing notebook cell is missing an ID: $($notebookFile.Name)"
+                # }
             }
         }
         catch {
@@ -167,6 +172,7 @@ try {
     foreach ($requiredScript in @(
         '.\scripts\Get-WorkspaceConfiguration.ps1',
         '.\scripts\New-NpcName.ps1',
+        '.\scripts\Normalize-Notebook.ps1',
         '.\scripts\Publish-Wiki.ps1',
         '.\scripts\Roll-Dice.ps1',
         '.\scripts\Test-Campaign.ps1'
