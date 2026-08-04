@@ -1,0 +1,3 @@
+[submodule "lonersrd"]
+	path = reference/lonersrd
+	url = https://github.com/zotiquestgames/lonersrd.git

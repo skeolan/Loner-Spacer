@@ -1,0 +1,58 @@
+{
+    "files.exclude": {
+        "**/.ipynb_checkpoints": true
+    },
+    "chat.instructionsFilesLocations": {
+        ".": true
+    },
+    "chat.editing.autoAcceptDelay": 5,
+    "chat.tools.terminal.autoApprove": {
+        "git submodule status": true,
+        "git submodule sync -- reference/lonersrd": true,
+        "git submodule update --init --recursive": true,
+        ".\\scripts\\Get-WorkspaceConfiguration.ps1": true,
+        ".\\scripts\\New-NpcName.ps1": true,
+        ".\\scripts\\Roll-Dice.ps1": true,
+        ".\\scripts\\Test-Campaign.ps1": true
+    },
+    "editor.fontSize": 14,
+    "markdown.preview.fontSize": 18,
+    "markdown.preview.breaks": true,
+    "markdown.preview.doubleClickToSwitchToEditor": true,
+    "markdown.styles": [
+        ".vscode/character-sheets.css"
+    ],
+    "workbench.editor.enablePreviewFromQuickOpen": true,
+    "workbench.editorAssociations": {
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "*.md": "vscode.markdown.preview.editor"
+    },
+    "workbench.editor.customLabels.patterns": {
+        "**/README.md": "${dirname} (${filename})"
+    },
+    "markdown.preview.frontMatter": "codeBlock",
+    "markdown.updateLinksOnFileMove.enabled": "always",
+    "foam.files.include": [
+        "README.md",
+        "campaign/**/*.md",
+        "reference/README.md",
+        "scripts/README.md",
+        "reference/lonersrd/content/core/loner-3e.md",
+        "reference/lonersrd/content/geared_towards_loner/spacer.md",
+        "reference/lonersrd/content/geared_towards_loner/the_shattered_reach.md",
+        "reference/lonersrd/content/geared_towards_loner/galaxy_drifter.md"
+    ],
+    "foam.completion.linkFormat": "wikilink",
+    "foam.completion.label": "title",
+    "foam.completion.useAlias": "whenPathDiffersFromTitle",
+    "foam.edit.linkReferenceDefinitions": "off",
+    "foam.graph.navigateToPreview": true,
+    "foam.graph.onStartup": false,
+    "python-envs.pythonProjects": [
+        {
+            "path": ".",
+            "envManager": "ms-python.python:venv",
+            "packageManager": "ms-python.python:pip"
+        }
+    ]
+}

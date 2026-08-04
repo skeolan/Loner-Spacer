@@ -1,0 +1,85 @@
+#preview:has(div[data-callout-metadata*="sheet-grid"]) {
+  --sheet-surface: color-mix(in srgb, var(--vscode-editor-background) 94%, var(--vscode-editor-foreground));
+  --sheet-border: color-mix(in srgb, var(--vscode-editor-foreground) 22%, transparent);
+  --sheet-muted: var(--vscode-descriptionForeground);
+}
+
+#preview:has(div[data-callout-metadata*="sheet-grid"]) > h1:first-child {
+  margin-bottom: 1rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 3px solid var(--vscode-textLink-foreground);
+  font-variant: small-caps;
+}
+
+#preview:has(div[data-callout-metadata*="ship-grid"]) > h1:first-child {
+  border-bottom-color: #5ca8d6;
+}
+
+#preview:has(div[data-callout-metadata*="character-grid"]) > h1:first-child {
+  border-bottom-color: #53b7c9;
+}
+
+#preview div[data-callout="multi-column"][data-callout-metadata*="sheet-grid"].callout {
+  --callout-gap: 0.75rem;
+  --callout-min-width: 11rem;
+  margin: 0 0 0.75rem;
+}
+
+#preview div[data-callout-metadata*="sheet-grid"]
+  > .callout-content
+  > .callout {
+  min-height: 100%;
+  box-shadow: 0 2px 7px color-mix(in srgb, #000 18%, transparent);
+}
+
+#preview div[data-callout-metadata*="sheet-grid"]
+  > .callout-content
+  > .callout
+  > .callout-content {
+  height: 100%;
+}
+
+#preview div[data-callout-metadata*="sheet-grid"]
+  > .callout-content
+  > .callout table {
+  width: 100%;
+  margin: 0;
+  border-spacing: 0;
+  background: transparent;
+}
+
+#preview div[data-callout-metadata*="sheet-profile"] table {
+  width: 100%;
+  margin: 0;
+  border-spacing: 0;
+  background: transparent;
+}
+
+#preview div[data-callout-metadata*="sheet-profile"] table th,
+#preview div[data-callout-metadata*="sheet-profile"] table td {
+  padding: 0.45rem 0.6rem;
+  border-color: color-mix(in srgb, rgb(var(--callout-color)) 30%, transparent);
+}
+
+#preview div[data-callout-metadata*="sheet-profile"] table th {
+  width: 1%;
+  white-space: nowrap;
+  color: rgb(var(--callout-color));
+  font-size: 0.8rem;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+#preview div[data-callout-metadata*="sheet-track"] > .callout-content > p {
+  margin: 0;
+  white-space: nowrap;
+  font-size: 1.1rem;
+  letter-spacing: 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 680px) {
+  #preview div[data-callout="multi-column"][data-callout-metadata*="sheet-grid"].callout {
+    --callout-min-width: 100%;
+  }
+}

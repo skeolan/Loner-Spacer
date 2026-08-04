@@ -1,0 +1,18 @@
+{
+    "servers": {
+        "foam": {
+            "type": "stdio",
+            "command": "npx",
+            "args": [
+                "-y",
+                "foam-cli@0.46.1",
+                "mcp",
+                "--workspace",
+                "${workspaceFolder}"
+            ],
+            "env": {
+                "FOAM_TELEMETRY": "0"
+            }
+        }
+    }
+}
