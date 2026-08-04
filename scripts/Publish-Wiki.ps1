@@ -522,12 +522,12 @@ The [main repository]($repositoryUrl) remains authoritative. This wiki is genera
 ## Lorebook
 
 - [Lorebook Home](Lorebook)
-- [NPCs](NPCs)
-- [Setting](Setting)
-- [Factions](Factions)
-- [Locations](Locations)
-- [Threads](Threads)
-- [Events](Events)
+    - [NPCs](NPCs)
+    - [Setting](Setting)
+    - [Factions](Factions)
+    - [Locations](Locations)
+    - [Threads](Threads)
+    - [Events](Events)
 
 ## Elsewhere
 
