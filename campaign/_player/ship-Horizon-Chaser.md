@@ -4,7 +4,7 @@
 >
 > > [!INFO|sheet-profile] SHIP PROFILE
 > >
-> > | **SHIP NAME** | Horizon Chaser |
+> > | **NAME** | Horizon Chaser |
 > > |:---|:---|
 > > | **TYPE** | Courier |
 >
